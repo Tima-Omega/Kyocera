@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'GT Eesti Pro Text';
+    src: url('../fonts/GTEestiProText-Regular.eot');
+    src: local('GT Eesti Pro Text Regular'), local('GTEestiProText-Regular'),
+        url('../fonts/GTEestiProText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTEestiProText-Regular.woff2') format('woff2'),
+        url('../fonts/GTEestiProText-Regular.woff') format('woff'),
+        url('../fonts/GTEestiProText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Eesti Pro Text';
+    src: url('../fonts/GTEestiProText-Bold.eot');
+    src: local('GT Eesti Pro Text Bold'), local('GTEestiProText-Bold'),
+        url('../fonts/GTEestiProText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTEestiProText-Bold.woff2') format('woff2'),
+        url('../fonts/GTEestiProText-Bold.woff') format('woff'),
+        url('../fonts/GTEestiProText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Eesti Pro Display';
+    src: url('../fonts/GTEestiProDisplay-Medium.eot');
+    src: local('GT Eesti Pro Display Medium'), local('GTEestiProDisplay-Medium'),
+        url('../fonts/GTEestiProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTEestiProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/GTEestiProDisplay-Medium.woff') format('woff'),
+        url('../fonts/GTEestiProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Eesti Pro Display';
+    src: url('../fonts/GTEestiProDisplay-Regular.eot');
+    src: local('GT Eesti Pro Display Regular'), local('GTEestiProDisplay-Regular'),
+        url('../fonts/GTEestiProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GTEestiProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/GTEestiProDisplay-Regular.woff') format('woff'),
+        url('../fonts/GTEestiProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
