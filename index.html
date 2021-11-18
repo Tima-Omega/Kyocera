@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./assets/style/normalize.css" />
         <link rel="stylesheet" href="./assets/style/style.css" />
         <title>Kyocera</title>
@@ -26,6 +27,7 @@
         </header>
         <div class="intro">
             <img src="./assets/img/dots.svg" alt="" class="dots" />
+            <img src="./assets/img/lamp.svg" alt="" class="lamp" />
             <div class="container">
                 <div class="intro__inner">
                     <div class="title intro__title">Измените свое умное рабочее пространство</div>
@@ -39,161 +41,155 @@
             <div class="container">
                 <div class="property__inner">
                     <div class="title property__title">Особенности моделей</div>
-                    <div class="handwritten">
-						<img src="./assets/img/dots2.svg" alt="" class="dots">
-                        <div class="subtitle handwritten__subtitle">
-                            Искусственный интеллект (AI) определяющий рукописный текст
-                        </div>
-                        <div class="handwritten__inner">
-                            <div class="handwritten__col">
-                                <div class="handwritten__pages">
-                                    <img
-                                        src="./assets/img/arr-page.svg"
-                                        alt=""
-                                        class="handwritten__arrow"
-                                    />
-                                    <img
-                                        src="./assets/img/page01.png"
-                                        alt=""
-                                        class="handwritten__page"
-                                    />
-                                    <img
-                                        src="./assets/img/page02.png"
-                                        alt=""
-                                        class="handwritten__page"
-                                    />
-                                </div>
-                                <div class="handwritten__row">
-                                    <img src="./assets/img/doc.svg" alt="" />
-                                    <div class="handwritten__text">
-                                        Определяет рукописный текст и делает его заметнее или
-                                        выделяет ярким цветом.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="handwritten__col">
-                                <div class="handwritten__row">
-                                    <div class="handwritten__text">
-                                        Удаляет нежелательный рукописный текст на копируемых
-                                        документах.
-                                    </div>
-                                    <img src="./assets/img/docs.svg" alt="" class="handwritten__doc"/>
-                                </div>
-                                <div class="handwritten__examples">
-                                    <img
-                                        src="./assets/img/arr-ex.svg"
-                                        alt=""
-                                        class="handwritten__arrow handwritten__arrow--sec"
-                                    />
-                                    <img
-                                        src="./assets/img/example.png"
-                                        alt=""
-                                        class="handwritten__example"
-                                    />
-                                    <img
-                                        src="./assets/img/example2.png"
-                                        alt=""
-                                        class="handwritten__example"
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="handwritten">
+                <img src="./assets/img/dots2.svg" alt="" class="dots" />
+                <img src="./assets/img/dots3.svg" alt="" class="dots dots--sec" />
+                <div class="container relative">
+                    <div class="subtitle handwritten__subtitle">
+                        Искусственный интеллект (AI) определяющий рукописный текст
                     </div>
-                    <div class="resolution">
-                        <img
-                            src="./assets/img/brilliant.svg"
-                            alt=""
-                            class="resolution__brilliant"
-                        />
-                        <div class="subtitle resolution__subtitle">
-                            Превосходное качество изображения с технологией (AI) Super Resolution
-                        </div>
-                        <div class="resolution__inner">
-                            <div class="resolution__example">
-                                <img src="./assets/img/resolution.png" alt="" />
-                                <div class="resolution__box">
-                                    <div class="resolution__timeline">До</div>
-                                    <div class="resolution__timeline">После</div>
-                                </div>
-                            </div>
-                            <div class="resolution__text">
-                                Повышает качество фотографий, логотипов с низким разрешением, тем
-                                самым увеличивает четкость изображений
-                            </div>
-                            <img
-                                src="./assets/img/resolution2.png"
-                                alt=""
-                                class="resolution__img"
-                            />
-                            <img
-                                src="./assets/img/arr-resol.svg"
-                                alt=""
-                                class="resolution__arrow"
-                            />
-                        </div>
-                    </div>
-                    <div class="copy">
-                        <div class="subtitle copy__subtitle">
-                            Улучшенная функция копирования удостоверений личности
-                        </div>
-                        <div class="copy__row">
-                            <div class="copy__box">
-                                <img src="./assets/img/copy.png" alt="" class="copy__img" />
-                                <img src="./assets/img/copy2.png" alt="" class="copy__img" />
-                            </div>
-                            <div class="copy__text">
-                                Расположение документов не имеет значения, копия документа будет
-                                создана ровно в центре листа.
-                            </div>
-                        </div>
-                        <div class="copy__row copy__row--mt">
-                            <div class="copy__wrap">
-                                <img src="./assets/img/auth.svg" alt="" />
-                                <div class="copy__text copy__text--sec">
-                                    Функция автоматического выравнивания при копировании и
-                                    сохранение в отдельный файл или страницу с копированием
-                                    документа в центр страницы
-                                </div>
-                            </div>
-                            <img src="./assets/img/pc.png" alt="" class="copy__pc" />
-                        </div>
-                    </div>
-                    <div class="conception">
-                        <div class="subtitle conception__subtitle">Концепция License ID</div>
-                        <div class="conception__inner">
-                            <div class="conception__item">
-                                <div class="conception__info">
-                                    <div class="conception__num">1.</div>
-                                    <div class="conception__name">Упаковка базовой модели</div>
-                                    <div class="conception__desc">
-                                        Табличка с названием модели в комплекте с устройством
-                                    </div>
-                                </div>
+                    <div class="handwritten__inner">
+                        <div class="handwritten__col">
+                            <div class="handwritten__pages">
                                 <img
-                                    src="./assets/img/conception.svg"
+                                    src="./assets/img/arr-page.svg"
                                     alt=""
-                                    class="conception__img"
+                                    class="handwritten__arrow"
+                                />
+                                <img
+                                    src="./assets/img/page01.png"
+                                    alt=""
+                                    class="handwritten__page"
+                                />
+                                <img
+                                    src="./assets/img/page02.png"
+                                    alt=""
+                                    class="handwritten__page"
                                 />
                             </div>
-                            <div class="conception__item conception__item--sec">
-                                <div class="conception__num">2.</div>
-                                <div class="conception__name">
-                                    Выпуск License ID через L Key Server
-                                </div>
-                                <div class="conception__desc">
-                                    Требуется интернет соединение, Product ID и серийный номер
-                                    машины
+                            <div class="handwritten__row">
+                                <img src="./assets/img/doc.svg" alt="" />
+                                <div class="handwritten__text">
+                                    Определяет рукописный текст и делает его заметнее или выделяет
+                                    ярким цветом.
                                 </div>
                             </div>
-                            <div class="conception__item conception__item--third">
-                                <div class="conception__info">
-                                    <div class="conception__num">3.</div>
-                                    <div class="conception__name">Установка</div>
-                                    <div class="conception__desc">
-                                        Интернет соединение не требуется
-                                    </div>
-                                    <img src="./assets/img/conception2.png" alt="" />
+                        </div>
+                        <div class="handwritten__col">
+                            <div class="handwritten__row">
+                                <div class="handwritten__text">
+                                    Удаляет нежелательный рукописный текст на копируемых документах.
                                 </div>
+                                <img src="./assets/img/docs.svg" alt="" class="handwritten__doc" />
+                            </div>
+                            <div class="handwritten__examples">
+                                <img
+                                    src="./assets/img/arr-ex.svg"
+                                    alt=""
+                                    class="handwritten__arrow handwritten__arrow--sec"
+                                />
+                                <img
+                                    src="./assets/img/example.png"
+                                    alt=""
+                                    class="handwritten__example"
+                                />
+                                <img
+                                    src="./assets/img/example2.png"
+                                    alt=""
+                                    class="handwritten__example"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resolution">
+                <img src="./assets/img/dots4.svg" alt="" class="dots" />
+                <img src="./assets/img/dots5.svg" alt="" class="dots dots--sec" />
+                <img src="./assets/img/resol-bg.svg" alt="" class="resolution__bg" />
+                <div class="container relative">
+                    <img src="./assets/img/brilliant.svg" alt="" class="resolution__brilliant" />
+                    <div class="subtitle resolution__subtitle">
+                        Превосходное качество изображения с технологией (AI) Super Resolution
+                    </div>
+                    <div class="resolution__inner">
+						<div class="resolution__text">
+                            Повышает качество фотографий, логотипов с низким разрешением, тем самым
+                            увеличивает четкость изображений
+                        </div>
+                        <div class="resolution__example">
+                            <img src="./assets/img/resolution.png" alt="" />
+                            <div class="resolution__box">
+                                <div class="resolution__timeline">До</div>
+                                <div class="resolution__timeline">После</div>
+                            </div>
+                        </div>
+                        <img src="./assets/img/resolution2.png" alt="" class="resolution__img" />
+                        <img src="./assets/img/arr-resol.svg" alt="" class="resolution__arrow" />
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <img src="./assets/img/dots6.svg" alt="" class="dots" />
+                <img src="./assets/img/dots7.svg" alt="" class="dots dots--sec" />
+                <div class="container relative">
+                    <div class="subtitle copy__subtitle">
+                        Улучшенная функция копирования удостоверений личности
+                    </div>
+                    <div class="copy__row">
+                        <div class="copy__box">
+                            <img src="./assets/img/copy.png" alt="" class="copy__img" />
+                            <img src="./assets/img/copy2.png" alt="" class="copy__img" />
+                        </div>
+                        <div class="copy__text">
+                            Расположение документов не имеет значения, копия документа будет создана
+                            ровно в центре листа.
+                        </div>
+                    </div>
+                    <div class="copy__row copy__row--mt">
+                        <div class="copy__wrap">
+                            <img src="./assets/img/auth.svg" alt="" class="copy__auth"/>
+                            <div class="copy__text copy__text--sec">
+                                Функция автоматического выравнивания при копировании и сохранение в
+                                отдельный файл или страницу с копированием документа в центр
+                                страницы
+                            </div>
+                        </div>
+                        <img src="./assets/img/pc.png" alt="" class="copy__pc" />
+                    </div>
+                </div>
+            </div>
+            <div class="conception">
+                <img src="./assets/img/dots8.svg" alt="" class="dots" />
+                <div class="container relative">
+                    <div class="subtitle conception__subtitle">Концепция License ID</div>
+                    <img src="./assets/img/arr-concept.svg" alt="" class="conception__arrow" />
+                    <div class="conception__inner">
+                        <div class="conception__item">
+                            <div class="conception__info">
+                                <div class="conception__num">1.</div>
+                                <div class="conception__name">Упаковка базовой модели</div>
+                                <div class="conception__desc">
+                                    Табличка с названием модели в комплекте с устройством
+                                </div>
+                            </div>
+                            <img src="./assets/img/conception.svg" alt="" class="conception__img" />
+                        </div>
+                        <div class="conception__item conception__item--sec">
+                            <div class="conception__num">2.</div>
+                            <div class="conception__name">Выпуск License ID через L Key Server</div>
+                            <div class="conception__desc">
+                                Требуется интернет соединение, Product ID и серийный номер машины
+                            </div>
+                        </div>
+                        <div class="conception__item conception__item--third">
+                            <div class="conception__info">
+                                <div class="conception__num">3.</div>
+                                <div class="conception__name">Установка</div>
+                                <div class="conception__desc">Интернет соединение не требуется</div>
+                                <img src="./assets/img/conception2.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -201,6 +197,7 @@
             </div>
         </div>
         <div class="interface">
+            <img src="./assets/img/dots9.svg" alt="" class="dots" />
             <div class="container container--sec">
                 <div class="interface__top">
                     <div class="title interface__title">Новое определение юзабилити</div>
@@ -234,7 +231,6 @@
                     </div>
                     <div class="interface__item">
                         <img src="./assets/img/interface3.png" alt="" />
-						<!-- <img src="./assets/img/interface4.png" alt="" class="interface__img"> -->
                         <div class="interface__name">Эффективный</div>
                         <div class="interface__desc">
                             Работайте быстрее благодаря меньшему количеству шагов и быстрому
@@ -337,11 +333,110 @@
                 </div>
             </div>
         </div>
-
-        <div class="models">
-		</div>
+        <!-- <div class="video">
+            <div class="container">
+                <div class="title">Видео линеки</div>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="video__item">
+                            <img src="./assets/img/video.png" alt="" />
+                            <div class="video__text">Эволюция в печати сочных изображений</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video__item">
+                            <img src="./assets/img/video2.png" alt="" />
+                            <div class="video__text">
+                                Будьте более продуктивными с технологиями искусственного интеллекта
+                                от Kyocera
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video__item">
+                            <img src="./assets/img/video3.png" alt="" />
+                            <div class="video__text">
+                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
+                                моделями
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video__item">
+                            <img src="./assets/img/video3.png" alt="" />
+                            <div class="video__text">
+                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
+                                моделями
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video__item">
+                            <img src="./assets/img/video3.png" alt="" />
+                            <div class="video__text">
+                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
+                                моделями
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video__item">
+                            <img src="./assets/img/video3.png" alt="" />
+                            <div class="video__text">
+                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
+                                моделями
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video__item">
+                            <img src="./assets/img/video3.png" alt="" />
+                            <div class="video__text">
+                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
+                                моделями
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video__item">
+                            <img src="./assets/img/video3.png" alt="" />
+                            <div class="video__text">
+                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
+                                моделями
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video__item">
+                            <img src="./assets/img/video3.png" alt="" />
+                            <div class="video__text">
+                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
+                                моделями
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="video__bottom">
+                    <div class="subtitle video__subtitle">
+                        Узнайте, почему эти МФУ предлагают гораздо больше возможностей, когда речь
+                        заходит о пользовательском интерфейсе, безопасности данных и искусственном
+                        интеллекте.
+                    </div>
+                    <div class="video__btns">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
         <div class="innovation">
+            <img src="./assets/img/dots10.svg" alt="" class="dots" />
             <div class="container">
                 <div class="innovation__inner">
                     <div class="innovation__info">
@@ -375,12 +470,12 @@
                     </div>
                     <form action="" class="form">
                         <div class="form__inputs">
-                            <input type="text" placeholder="Имя" />
-                            <input type="text" placeholder="Фамилия" />
-                            <input type="text" placeholder="Компания" />
-                            <input type="text" placeholder="Должность" />
-                            <input type="text" placeholder="Телефон" />
-                            <input type="text" placeholder="Email" />
+                            <input type="text" name="name" placeholder="Имя" />
+                            <input type="text" name="surname" placeholder="Фамилия" />
+                            <input type="text" name="comp" placeholder="Компания" />
+                            <input type="text" name="post" placeholder="Должность" />
+                            <input type="text" name="num" placeholder="Телефон" />
+                            <input type="text" name="mail" placeholder="Email" />
                         </div>
                         <button class="form__btn">Отправить</button>
                         <div class="form__terms">
@@ -405,23 +500,113 @@
                         <a href="" class="footer__link">Видео</a>
                         <a href="" class="footer__link">Форма обратной связи</a>
                     </nav>
-					<div class="footer__social">
-						<a href="">
-							<img src="./assets/img/fb.png" alt="">
-						</a>
-						<a href="">
-							<img src="./assets/img/yt.png" alt="">
-						</a>
-					</div>
+                    <div class="footer__social">
+                        <a href="">
+                            <img src="./assets/img/fb.png" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="./assets/img/yt.png" alt="" />
+                        </a>
+                    </div>
                 </div>
-				<div class="footer__copyright">2021 KYOCERA Document Solutions Russia L.L.C</div>
-				<div class="footer__terms">
-					<a href="">Конфиденциальность и файлы cookie</a>
-					<a href="">Условия использования</a>
-				</div>
+                <div class="footer__copyright">2021 KYOCERA Document Solutions Russia L.L.C</div>
+                <div class="footer__terms">
+                    <a href="">Конфиденциальность и файлы cookie</a>
+                    <a href="">Условия использования</a>
+                </div>
             </div>
         </footer>
+        <div class="overlay"></div>
+        <div class="popup">
+            <div class="popup__close"></div>
+            <div class="title popup__title">Технические спецификации</div>
+            <div class="popup__item">
+                <div class="popup__trigger">
+                    <div class="popup__item-name">ОБЩАЯ ИНФОРМАЦИЯ</div>
+                    <div class="popup__btn"></div>
+                </div>
+                <div class="popup__info">
+                    Показатели вместимости рассчитаны исходя из максимальной толщины листа бумаги
+                    0,11 мм. Используйте бумагу, рекомендованную компанией Kyocera, при нормальных
+                    условиях окружающей среды.
+                </div>
+            </div>
+            <div class="popup__item">
+                <div class="popup__trigger">
+                    <div class="popup__item-name">РАБОТА С БУМАГОЙ</div>
+                    <div class="popup__btn"></div>
+                </div>
+                <div class="popup__info">
+                    <p>
+                        Показатели вместимости рассчитаны исходя из максимальной толщины листа
+                        бумаги 0,11 мм. Используйте бумагу, рекомендованную компанией Kyocera, при
+                        нормальных условиях окружающей среды.
+                    </p>
+                    <p>
+                        <span>Вместимость системы подачи:</span> универсальный лоток: 150 листов,
+                        52–300 г/м2 (баннер 136–163 г/м2), A6R – SRA3 (320 × 450 мм), баннер макс.
+                        304,8 × 1220 мм, стандартная универсальная кассета для бумаги: 2 × 500
+                        листов 52–300 г/м2, верхняя кассета: от A6R до A4R, нижняя кассета: от A6R
+                        до SRA3, макс. вместимость системы подачи с опциями: 7150 листов A4
+                    </p>
+                    <p>
+                        <span>Двусторонняя печать:</span> стандартно поддерживает печать на бумаге
+                        плотностью 60–256 г/м2 в формате от SRA3 до A6R
+                    </p>
+                    <p>
+                        <span>Вместимость системы вывода:</span> 500 листов лицевой стороной вниз,
+                        макс. 5000 листов
+                    </p>
+                </div>
+            </div>
+            <div class="popup__item">
+                <div class="popup__trigger">
+                    <div class="popup__item-name">ФУНКЦИИ ПЕЧАТИ</div>
+                    <div class="popup__btn"></div>
+                </div>
+                <div class="popup__info">
+                    Показатели вместимости рассчитаны исходя из максимальной толщины листа бумаги
+                    0,11 мм. Используйте бумагу, рекомендованную компанией Kyocera, при нормальных
+                    условиях окружающей среды.
+                </div>
+            </div>
+			<div class="popup__item">
+                <div class="popup__trigger">
+                    <div class="popup__item-name">ФУНКЦИИ КОПИРОВАНИЯ</div>
+                    <div class="popup__btn"></div>
+                </div>
+                <div class="popup__info">
+                    Показатели вместимости рассчитаны исходя из максимальной толщины листа бумаги
+                    0,11 мм. Используйте бумагу, рекомендованную компанией Kyocera, при нормальных
+                    условиях окружающей среды.
+                </div>
+            </div>
+			<div class="popup__item">
+                <div class="popup__trigger">
+                    <div class="popup__item-name">ФУНКЦИИ ФАКСИМИЛЬНОЙ СВЯЗИ (ДОПОЛНИТЕЛЬНО)</div>
+                    <div class="popup__btn"></div>
+                </div>
+                <div class="popup__info">
+                    Показатели вместимости рассчитаны исходя из максимальной толщины листа бумаги
+                    0,11 мм. Используйте бумагу, рекомендованную компанией Kyocera, при нормальных
+                    условиях окружающей среды.
+                </div>
+            </div>
+			<div class="popup__item">
+                <div class="popup__trigger">
+                    <div class="popup__item-name">РАСХОДНЫЕ МАТЕРИАЛЫ</div>
+                    <div class="popup__btn"></div>
+                </div>
+                <div class="popup__info">
+                    Показатели вместимости рассчитаны исходя из максимальной толщины листа бумаги
+                    0,11 мм. Используйте бумагу, рекомендованную компанией Kyocera, при нормальных
+                    условиях окружающей среды.
+                </div>
+            </div>
+        </div>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
 </html>
