@@ -4,6 +4,7 @@ $(document).ready(function () {
         centeredSlides: true,
         spaceBetween: 100,
         simulateTouch: false,
+		initialSlide: 1,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -13,6 +14,11 @@ $(document).ready(function () {
             type: 'fraction',
         },
     });
+	$('.video__slide').click(function() {
+		$('.overlay').fadeIn();
+		$('.popup').fadeIn();
+		$("body").css("overflow", "hidden")
+	});
 	$('.overlay').click(function () {
 		$(this).fadeOut();
 		$('.popup').fadeOut();
