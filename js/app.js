@@ -31,11 +31,9 @@ $(document).ready(function () {
 		focusCleanup: true,
 		rules: {
             mail: {
-                required: false,
                 email: true,
             },
             surname: {
-                required: false,
                 minlength: 5,
             },
 			num: {
@@ -54,5 +52,8 @@ $(document).ready(function () {
 		errorPlacement: function(error, element) {
 			return true;
 		}
+	})
+	$('.burger').click(function(){
+		$('.burger__list').toggleClass('active')
 	})
 });
