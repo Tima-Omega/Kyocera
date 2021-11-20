@@ -2122,13 +2122,13 @@ body {
     &__title {
         margin-left: 200px;
     }
-    &__inner {
-        @media (max-width: 992px) {
-            display: flex;
-            flex-direction: column;
-        }
+    // &__inner {
+    //     @media (max-width: 992px) {
+    //         display: flex;
+    //         flex-direction: column;
+    //     }
         
-    }
+    // }
     // .mobile {
     //     display: none;
     //     @media (max-width: 992px) {
