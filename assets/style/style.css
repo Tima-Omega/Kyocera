@@ -3791,15 +3791,22 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 90vw;
+  max-width: 80vw;
   display: none;
   z-index: 300;
   width: 100%;
 }
 
+@media (max-width: 992px) {
+  .player {
+    max-width: 90vw;
+  }
+}
+
 .player__video {
   max-width: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .player .popup__close {
