@@ -5,6 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="stylesheet" href="./assets/style/normalize.css" />
         <link rel="stylesheet" href="./assets/style/style.css" />
         <title>Kyocera</title>
@@ -17,26 +21,30 @@
                         <img src="./assets/img/logo.svg" alt="" />
                     </a>
                     <nav class="header__nav">
-                        <a href="" class="header__link">Особенности</a>
-                        <a href="" class="header__link">Модели линейки</a>
-                        <a href="" class="header__link">Видео</a>
-                        <a href="" class="header__link">Форма обратной связи</a>
+                        <a href="#property" class="header__link">Особенности</a>
+                        <a href="#model" class="header__link">Модели линейки</a>
+                        <a href="#video" class="header__link">Видео</a>
+                        <a href="#form" class="header__link">Форма обратной связи</a>
                     </nav>
-					<button class="burger">
-						<div class="burger__list">
-							<div class="burger__close"></div>
-							<a href="" class="header__link">Особенности</a>
-							<a href="" class="header__link">Модели линейки</a>
-							<a href="" class="header__link">Видео</a>
-							<a href="" class="header__link">Форма обратной связи</a>
-						</div>
-					</button>
+                    <button class="burger">
+                        <div class="burger__list">
+                            <div class="burger__close"></div>
+                            <a href="" class="header__link">Особенности</a>
+                            <a href="" class="header__link">Модели линейки</a>
+                            <a href="" class="header__link">Видео</a>
+                            <a href="" class="header__link">Форма обратной связи</a>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
         <div class="intro">
             <img src="./assets/img/dots.svg" alt="" class="dots" />
-            <img src="./assets/img/lamp.svg" alt="" class="lamp" />
+            <img
+                src="./assets/img/lamp.svg"
+                alt=""
+                class="lamp animate__animated animate__heartBeat animation"
+            />
             <div class="container">
                 <div class="intro__inner">
                     <div class="title intro__title">Измените свое умное рабочее пространство</div>
@@ -46,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="property">
+        <div class="property" id="property">
             <div class="container">
                 <div class="property__inner">
                     <div class="title property__title">Особенности моделей</div>
@@ -65,49 +73,81 @@
                                 <img
                                     src="./assets/img/arr-page.svg"
                                     alt=""
-                                    class="handwritten__arrow"
+                                    class="
+                                        handwritten__arrow
+                                        animate__animated animate__fadeIn
+                                        animation
+                                    "
                                 />
                                 <img
                                     src="./assets/img/page01.png"
                                     alt=""
-                                    class="handwritten__page"
+                                    class="
+                                        handwritten__page
+                                        animate__backInUp animate__animated
+                                        animation
+                                        delay-1
+                                    "
                                 />
                                 <img
                                     src="./assets/img/page02.png"
                                     alt=""
-                                    class="handwritten__page"
+                                    class="
+                                        handwritten__page
+                                        animate__backInUp animate__animated
+                                        animation
+                                        delay-1
+                                    "
                                 />
                             </div>
-                            <div class="handwritten__row">
-                                <img src="./assets/img/doc.svg" alt="" class="handwritten__doc handwritten__doc--sec"/>
-                                <div class="handwritten__text">
-                                    Определяет рукописный текст и делает его заметнее или выделяет
-                                    ярким цветом.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="handwritten__col">
                             <div class="handwritten__row">
                                 <div class="handwritten__text">
                                     Удаляет нежелательный рукописный текст на копируемых документах.
                                 </div>
                                 <img src="./assets/img/docs.svg" alt="" class="handwritten__doc" />
                             </div>
+                        </div>
+                        <div class="handwritten__col handwritten__col--mt">
+                            <div class="handwritten__row">
+                                <img
+                                    src="./assets/img/doc.svg"
+                                    alt=""
+                                    class="handwritten__doc handwritten__doc--sec"
+                                />
+                                <div class="handwritten__text">
+                                    Определяет рукописный текст и делает его заметнее или выделяет
+                                    ярким цветом.
+                                </div>
+                            </div>
                             <div class="handwritten__examples">
                                 <img
                                     src="./assets/img/arr-ex.svg"
                                     alt=""
-                                    class="handwritten__arrow handwritten__arrow--sec"
+                                    class="
+                                        handwritten__arrow handwritten__arrow--sec
+                                        animate__animated animate__fadeIn
+                                        animation
+                                    "
                                 />
                                 <img
                                     src="./assets/img/example.png"
                                     alt=""
-                                    class="handwritten__example"
+                                    class="
+                                        handwritten__example
+                                        animate__backInUp animate__animated
+                                        animation
+                                        delay-1
+                                    "
                                 />
                                 <img
                                     src="./assets/img/example2.png"
                                     alt=""
-                                    class="handwritten__example"
+                                    class="
+                                        handwritten__example
+                                        animate__backInUp animate__animated
+                                        animation
+                                        delay-1
+                                    "
                                 />
                             </div>
                         </div>
@@ -118,13 +158,18 @@
                 <img src="./assets/img/dots4.svg" alt="" class="dots" />
                 <img src="./assets/img/dots5.svg" alt="" class="dots dots--sec" />
                 <img src="./assets/img/resol-bg.svg" alt="" class="resolution__bg" />
+                <img
+                    src="./assets/img/resol-bg-mob.svg"
+                    alt=""
+                    class="resolution__bg resolution__bg--mob"
+                />
                 <div class="container relative">
                     <img src="./assets/img/brilliant.svg" alt="" class="resolution__brilliant" />
                     <div class="subtitle resolution__subtitle">
                         Превосходное качество изображения с технологией (AI) Super Resolution
                     </div>
                     <div class="resolution__inner">
-						<div class="resolution__text">
+                        <div class="resolution__text">
                             Повышает качество фотографий, логотипов с низким разрешением, тем самым
                             увеличивает четкость изображений
                         </div>
@@ -159,7 +204,7 @@
                     </div>
                     <div class="copy__row copy__row--mt">
                         <div class="copy__wrap">
-                            <img src="./assets/img/auth.svg" alt="" class="copy__auth"/>
+                            <img src="./assets/img/auth.svg" alt="" class="copy__auth" />
                             <div class="copy__text copy__text--sec">
                                 Функция автоматического выравнивания при копировании и сохранение в
                                 отдельный файл или страницу с копированием документа в центр
@@ -171,50 +216,86 @@
                 </div>
             </div>
             <div class="conception">
+                <img src="./assets/img/license.png" alt="" class="conception__bg" />
                 <img src="./assets/img/dots8.svg" alt="" class="dots" />
                 <div class="container relative">
                     <div class="subtitle conception__subtitle">Концепция License ID</div>
                     <img src="./assets/img/arr-concept.svg" alt="" class="conception__arrow" />
+                    <img src="./assets/img/round-concept.svg" alt="" class="conception__round" />
                     <div class="conception__inner">
                         <div class="conception__item">
                             <div class="conception__info">
                                 <div class="conception__num">1.</div>
-                                <div class="conception__name">Упаковка базовой модели</div>
-                                <div class="conception__desc">
-                                    Табличка с названием модели в комплекте с устройством
+                                <div class="conception__wrap">
+                                    <div class="conception__name">Упаковка базовой модели</div>
+                                    <div class="conception__desc">
+                                        Табличка с названием модели в комплекте с устройством
+                                    </div>
                                 </div>
                             </div>
                             <img src="./assets/img/conception.svg" alt="" class="conception__img" />
                         </div>
                         <div class="conception__item conception__item--sec">
-                            <div class="conception__num">2.</div>
-                            <div class="conception__name">Выпуск License ID через L Key Server</div>
-                            <div class="conception__desc">
-                                Требуется интернет соединение, Product ID и серийный номер машины
+                            <div class="conception__info">
+                                <div class="conception__num">2.</div>
+                                <div class="conception__wrap">
+                                    <div class="conception__name">
+                                        Выпуск License ID через L Key Server
+                                    </div>
+                                    <div class="conception__desc">
+                                        Требуется интернет соединение, Product ID и серийный номер
+                                        машины
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="conception__item conception__item--third">
                             <div class="conception__info">
                                 <div class="conception__num">3.</div>
-                                <div class="conception__name">Установка</div>
-                                <div class="conception__desc">Интернет соединение не требуется</div>
-                                <img src="./assets/img/conception2.png" alt="" />
+                                <div class="conception__wrap">
+                                    <div class="conception__name">Установка</div>
+                                    <div class="conception__desc">
+                                        Интернет соединение не требуется
+                                    </div>
+                                </div>
                             </div>
+                            <img src="./assets/img/conception2.png" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        -
         <div class="interface">
             <img src="./assets/img/dots9.svg" alt="" class="dots" />
             <div class="container container--sec">
                 <div class="interface__top">
                     <div class="title interface__title">Новое определение юзабилити</div>
-                    <img src="./assets/img/interface.png" alt="" class="interface__tablet"/>
+                    <img
+                        src="./assets/img/interface.png"
+                        alt=""
+                        class="
+                            interface__tablet
+                            animate__zoomIn animate__animated
+                            animation
+                            animate__delay-2s
+                        "
+                    />
                     <div class="interface__box">
-                        <img src="./assets/img/hand.svg" alt="" class="interface__hand" />
+                        <img
+                            src="./assets/img/hand.svg"
+                            alt=""
+                            class="
+                                interface__hand
+                                animate__fadeIn animate__animated
+                                animation
+                                delay-2
+                            "
+                        />
                         <div class="interface__info">
-                            <div class="subtitle interface__subtitle">Встречайте новый интерфейс</div>
+                            <div class="subtitle interface__subtitle">
+                                Встречайте новый интерфейс
+                            </div>
                             <div class="interface__text">
                                 Благодаря стандартным цветам и понятным значкам выполнение задач на
                                 принтере никогда не было таким простым.
@@ -222,7 +303,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="interface__inner">
                     <div class="interface__item">
                         <img src="./assets/img/interface1.png" alt="" />
@@ -268,7 +349,11 @@
                 </div>
                 <div class="safety__inner">
                     <div class="safety__item">
-                        <img src="./assets/img/safety.svg" alt="" />
+                        <img
+                            src="./assets/img/safety.svg"
+                            alt=""
+                            class="animate__fadeInDown animate__animated animation delay-3"
+                        />
                         <div class="safety__box">
                             <div class="safety__name">Конфиденциальность</div>
                             <div class="safety__desc">
@@ -278,7 +363,11 @@
                         </div>
                     </div>
                     <div class="safety__item">
-                        <img src="./assets/img/safety2.svg" alt="" />
+                        <img
+                            src="./assets/img/safety2.svg"
+                            alt=""
+                            class="animate__fadeInDown animate__animated animation delay-4"
+                        />
                         <div class="safety__box">
                             <div class="safety__name">Честность</div>
                             <div class="safety__desc">
@@ -288,7 +377,11 @@
                         </div>
                     </div>
                     <div class="safety__item">
-                        <img src="./assets/img/safety3.svg" alt="" />
+                        <img
+                            src="./assets/img/safety3.svg"
+                            alt=""
+                            class="animate__fadeInDown animate__animated animation delay-5"
+                        />
                         <div class="safety__box">
                             <div class="safety__name">Доступность</div>
                             <div class="safety__desc">
@@ -298,7 +391,11 @@
                         </div>
                     </div>
                     <div class="safety__item">
-                        <img src="./assets/img/safety4.svg" alt="" />
+                        <img
+                            src="./assets/img/safety4.svg"
+                            alt=""
+                            class="animate__fadeInDown animate__animated animation delay-6"
+                        />
                         <div class="safety__box">
                             <div class="safety__name">Подлинность</div>
                             <div class="safety__desc">
@@ -308,7 +405,11 @@
                         </div>
                     </div>
                     <div class="safety__item">
-                        <img src="./assets/img/safety5.svg" alt="" />
+                        <img
+                            src="./assets/img/safety5.svg"
+                            alt=""
+                            class="animate__fadeInDown animate__animated animation delay-1"
+                        />
                         <div class="safety__box">
                             <div class="safety__name">Подотчетность</div>
                             <div class="safety__desc">
@@ -318,7 +419,11 @@
                         </div>
                     </div>
                     <div class="safety__item">
-                        <img src="./assets/img/safety6.svg" alt="" />
+                        <img
+                            src="./assets/img/safety6.svg"
+                            alt=""
+                            class="animate__fadeInDown animate__animated animation delay-7"
+                        />
                         <div class="safety__box">
                             <div class="safety__name">Безотказность</div>
                             <div class="safety__desc">
@@ -328,7 +433,11 @@
                         </div>
                     </div>
                     <div class="safety__item">
-                        <img src="./assets/img/safety7.svg" alt="" />
+                        <img
+                            src="./assets/img/safety7.svg"
+                            alt=""
+                            class="animate__fadeInDown animate__animated animation delay-8"
+                        />
                         <div class="safety__box">
                             <div class="safety__name">Надежность</div>
                             <div class="safety__desc">
@@ -339,123 +448,461 @@
                 </div>
                 <div class="safety__bottom">
                     <img src="./assets/img/printer.png" alt="" class="safety__img" />
-                    <img src="./assets/img/shield.svg" alt="" class="safety__shield" />
+                    <img
+                        src="./assets/img/shield.svg"
+                        alt=""
+                        class="
+                            safety__shield
+                            animate__fadeInDown animate__animated
+                            animation
+                            delay-2
+                        "
+                    />
                 </div>
             </div>
         </div>
 
-        <!-- <div class="model">
-            
-        </div>
-
-        <div class="video">
+        <!-- <div class="model" id="model">
             <div class="container">
-                <div class="title">Видео линеки</div>
+                <div class="title model__title">
+                    Модели в линейке <br />
+                    <span>Kyocera</span> Iris High
+                </div>
             </div>
-            <div class="swiper">
+            <div class="swiper model__slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide video__slide video__slide--1">
-                        <div class="video__item">
-                            <img src="./assets/img/video.png" alt="" />
-                            <div class="video__text">Эволюция в печати сочных изображений</div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide video__slide">
-                        <div class="video__item">
-                            <img src="./assets/img/video2.png" alt="" />
-                            <div class="video__text">
-                                Будьте более продуктивными с технологиями искусственного интеллекта
-                                от Kyocera
+                    <div class="swiper-slide model__slide">
+                        <div class="model__item">
+                            <div class="model__img">
+                                <img src="./assets/img/model.png" alt="" class="model__example" />
+                                <img src="./assets/img/round.svg" alt="" class="model__round animation animate__animated animate__rotateIn" />
+                            </div>
+                            <div class="model__inner">
+                                <div class="subtitle model__subtitle">
+                                    Цифровая трансформация стала простой и безопасной
+                                </div>
+                                <div class="model__text">
+                                    <span>TASKalfa 4054ci</span> – это идеальное решение для
+                                    комплексного управления офисной информацией. Благодаря
+                                    технологиям искусственного интеллекта, улучшенным параметрам
+                                    безопасности, высокому качеству печати, гибкой системе подачи
+                                    бумаги и опциям финишной обработки это устройство станет вашим
+                                    идеальным партнером в работе.
+                                </div>
+                                <div class="model__info">
+                                    <div class="model__top">
+                                        <div class="model__name">TASKalfa 4054ci</div>
+                                        <img src="./assets/img/model-printer.svg" alt="" />
+                                    </div>
+                                    <div class="model__prop">
+                                        Цветное многофункциональное устройство формата SRA3
+                                    </div>
+                                    <div class="model__prop">
+                                        40/40 страниц A4 в минуту (цветная/монохромная печать)
+                                    </div>
+                                    <div class="model__prop">Разрешение 4800 × 1200 dpi</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide video__slide video__slide--3">
-                        <div class="video__item">
-                            <img src="./assets/img/video3.png" alt="" />
-                            <div class="video__text">
-                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
-                                моделями
-                            </div>
+                        <div class="model__btn">
+                            <div class="model__icon"></div>
+                            Технические характеристики
                         </div>
                     </div>
-                    <div class="swiper-slide video__slide video__slide--4">
-                        <div class="video__item">
-                            <img src="./assets/img/video3.png" alt="" />
-                            <div class="video__text">
-                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
-                                моделями
+                    <div class="swiper-slide model__slide">
+                        <div class="model__item">
+                            <div class="model__img">
+                                <img src="./assets/img/model.png" alt="" class="model__example" />
+                                <img src="./assets/img/round.svg" alt="" class="model__round" />
+                            </div>
+                            <div class="model__inner">
+                                <div class="subtitle model__subtitle">
+                                    Цифровая трансформация стала простой и безопасной
+                                </div>
+                                <div class="model__text">
+                                    <span>TASKalfa 4054ci</span> – это идеальное решение для
+                                    комплексного управления офисной информацией. Благодаря
+                                    технологиям искусственного интеллекта, улучшенным параметрам
+                                    безопасности, высокому качеству печати, гибкой системе подачи
+                                    бумаги и опциям финишной обработки это устройство станет вашим
+                                    идеальным партнером в работе.
+                                </div>
+                                <div class="model__info">
+                                    <div class="model__top">
+                                        <div class="model__name">TASKalfa 4054ci</div>
+                                        <img src="./assets/img/model-printer.svg" alt="" />
+                                    </div>
+                                    <div class="model__prop">
+                                        Цветное многофункциональное устройство формата SRA3
+                                    </div>
+                                    <div class="model__prop">
+                                        40/40 страниц A4 в минуту (цветная/монохромная печать)
+                                    </div>
+                                    <div class="model__prop">Разрешение 4800 × 1200 dpi</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="video__item">
-                            <img src="./assets/img/video3.png" alt="" />
-                            <div class="video__text">
-                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
-                                моделями
-                            </div>
+                        <div class="model__btn">
+                            <div class="model__icon"></div>
+                            Технические характеристики
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="video__item">
-                            <img src="./assets/img/video3.png" alt="" />
-                            <div class="video__text">
-                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
-                                моделями
+                    <div class="swiper-slide model__slide">
+                        <div class="model__item">
+                            <div class="model__img">
+                                <img src="./assets/img/model.png" alt="" class="model__example" />
+                                <img src="./assets/img/round.svg" alt="" class="model__round animate__rotateIn animate__animated animate" />
+                            </div>
+                            <div class="model__inner">
+                                <div class="subtitle model__subtitle">
+                                    Цифровая трансформация стала простой и безопасной
+                                </div>
+                                <div class="model__text">
+                                    <span>TASKalfa 4054ci</span> – это идеальное решение для
+                                    комплексного управления офисной информацией. Благодаря
+                                    технологиям искусственного интеллекта, улучшенным параметрам
+                                    безопасности, высокому качеству печати, гибкой системе подачи
+                                    бумаги и опциям финишной обработки это устройство станет вашим
+                                    идеальным партнером в работе.
+                                </div>
+                                <div class="model__info">
+                                    <div class="model__top">
+                                        <div class="model__name">TASKalfa 4054ci</div>
+                                        <img src="./assets/img/model-printer.svg" alt="" />
+                                    </div>
+                                    <div class="model__prop">
+                                        Цветное многофункциональное устройство формата SRA3
+                                    </div>
+                                    <div class="model__prop">
+                                        40/40 страниц A4 в минуту (цветная/монохромная печать)
+                                    </div>
+                                    <div class="model__prop">Разрешение 4800 × 1200 dpi</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="video__item">
-                            <img src="./assets/img/video3.png" alt="" />
-                            <div class="video__text">
-                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
-                                моделями
-                            </div>
+                        <div class="model__btn">
+                            <div class="model__icon"></div>
+                            Технические характеристики
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="video__item">
-                            <img src="./assets/img/video3.png" alt="" />
-                            <div class="video__text">
-                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
-                                моделями
+                    <div class="swiper-slide model__slide">
+                        <div class="model__item">
+                            <div class="model__img">
+                                <img src="./assets/img/model.png" alt="" class="model__example" />
+                                <img src="./assets/img/round.svg" alt="" class="model__round" />
+                            </div>
+                            <div class="model__inner">
+                                <div class="subtitle model__subtitle">
+                                    Цифровая трансформация стала простой и безопасной
+                                </div>
+                                <div class="model__text">
+                                    <span>TASKalfa 4054ci</span> – это идеальное решение для
+                                    комплексного управления офисной информацией. Благодаря
+                                    технологиям искусственного интеллекта, улучшенным параметрам
+                                    безопасности, высокому качеству печати, гибкой системе подачи
+                                    бумаги и опциям финишной обработки это устройство станет вашим
+                                    идеальным партнером в работе.
+                                </div>
+                                <div class="model__info">
+                                    <div class="model__top">
+                                        <div class="model__name">TASKalfa 4054ci</div>
+                                        <img src="./assets/img/model-printer.svg" alt="" />
+                                    </div>
+                                    <div class="model__prop">
+                                        Цветное многофункциональное устройство формата SRA3
+                                    </div>
+                                    <div class="model__prop">
+                                        40/40 страниц A4 в минуту (цветная/монохромная печать)
+                                    </div>
+                                    <div class="model__prop">Разрешение 4800 × 1200 dpi</div>
+                                </div>
                             </div>
                         </div>
+                        <div class="model__btn">
+                            <div class="model__icon"></div>
+                            Технические характеристики
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="video__item">
-                            <img src="./assets/img/video3.png" alt="" />
-                            <div class="video__text">
-                                На 25% лучшая обработка PDF документов по сравнению с предыдущими
-                                моделями
+                    <div class="swiper-slide model__slide">
+                        <div class="model__item">
+                            <div class="model__img">
+                                <img src="./assets/img/model.png" alt="" class="model__example" />
+                                <img src="./assets/img/round.svg" alt="" class="model__round" />
                             </div>
+                            <div class="model__inner">
+                                <div class="subtitle model__subtitle">
+                                    Цифровая трансформация стала простой и безопасной
+                                </div>
+                                <div class="model__text">
+                                    <span>TASKalfa 4054ci</span> – это идеальное решение для
+                                    комплексного управления офисной информацией. Благодаря
+                                    технологиям искусственного интеллекта, улучшенным параметрам
+                                    безопасности, высокому качеству печати, гибкой системе подачи
+                                    бумаги и опциям финишной обработки это устройство станет вашим
+                                    идеальным партнером в работе.
+                                </div>
+                                <div class="model__info">
+                                    <div class="model__top">
+                                        <div class="model__name">TASKalfa 4054ci</div>
+                                        <img src="./assets/img/model-printer.svg" alt="" />
+                                    </div>
+                                    <div class="model__prop">
+                                        Цветное многофункциональное устройство формата SRA3
+                                    </div>
+                                    <div class="model__prop">
+                                        40/40 страниц A4 в минуту (цветная/монохромная печать)
+                                    </div>
+                                    <div class="model__prop">Разрешение 4800 × 1200 dpi</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="model__btn">
+                            <div class="model__icon"></div>
+                            Технические характеристики
+                        </div>
+                    </div>
+                    <div class="swiper-slide model__slide">
+                        <div class="model__item">
+                            <div class="model__img">
+                                <img src="./assets/img/model.png" alt="" class="model__example" />
+                                <img src="./assets/img/round.svg" alt="" class="model__round" />
+                            </div>
+                            <div class="model__inner">
+                                <div class="subtitle model__subtitle">
+                                    Цифровая трансформация стала простой и безопасной
+                                </div>
+                                <div class="model__text">
+                                    <span>TASKalfa 4054ci</span> – это идеальное решение для
+                                    комплексного управления офисной информацией. Благодаря
+                                    технологиям искусственного интеллекта, улучшенным параметрам
+                                    безопасности, высокому качеству печати, гибкой системе подачи
+                                    бумаги и опциям финишной обработки это устройство станет вашим
+                                    идеальным партнером в работе.
+                                </div>
+                                <div class="model__info">
+                                    <div class="model__top">
+                                        <div class="model__name">TASKalfa 4054ci</div>
+                                        <img src="./assets/img/model-printer.svg" alt="" />
+                                    </div>
+                                    <div class="model__prop">
+                                        Цветное многофункциональное устройство формата SRA3
+                                    </div>
+                                    <div class="model__prop">
+                                        40/40 страниц A4 в минуту (цветная/монохромная печать)
+                                    </div>
+                                    <div class="model__prop">Разрешение 4800 × 1200 dpi</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="model__btn">
+                            <div class="model__icon"></div>
+                            Технические характеристики
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="video__bottom">
-                    <div class="subtitle video__subtitle">
-                        Узнайте, почему эти МФУ предлагают гораздо больше возможностей, когда речь
-                        заходит о пользовательском интерфейсе, безопасности данных и искусственном
-                        интеллекте.
+            <div class="swiper model__bottom">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        1. <br />
+                        TASKalfa 4054ci
                     </div>
-                    <div class="video__btns">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
+                    <div class="swiper-slide">
+                        1. <br />
+                        TASKalfa 4054ci
+                    </div>
+                    <div class="swiper-slide">
+                        1. <br />
+                        TASKalfa 4054ci
+                    </div>
+                    <div class="swiper-slide">
+                        1. <br />
+                        TASKalfa 4054ci
+                    </div>
+                    <div class="swiper-slide">
+                        1. <br />
+                        TASKalfa 4054ci
+                    </div>
+                    <div class="swiper-slide">
+                        1. <br />
+                        TASKalfa 4054ci
                     </div>
                 </div>
             </div>
         </div> -->
+
+        <div class="video" id="video">
+            <div class="container relative">
+                <div class="title video__title">Видео линеки</div>
+                <img
+                    src="./assets/img/cam.svg"
+                    alt=""
+                    class="video__cam animate__animated animation animate__zoomIn"
+                />
+            </div>
+            <div class="video__inner">
+                <!-- <div class="container mobile">
+                    <div class="video__bottom">
+                        <div class="subtitle video__subtitle">
+                            Узнайте, почему эти МФУ предлагают гораздо больше возможностей, когда
+                            речь заходит о пользовательском интерфейсе, безопасности данных и
+                            искусственном интеллекте.
+                        </div>
+                        <div class="video__btns">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="swiper video__slider animate__animated animation animate__fadeIn delay-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide video__slide video__slide--1">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video.png" alt="" />
+                                </div>
+                                <div class="video__text">Эволюция в печати сочных изображений</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video2.png" alt="" />
+                                </div>
+                                <div class="video__text">
+                                    Будьте более продуктивными с технологиями искусственного
+                                    интеллекта от Kyocera
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide video__slide--3">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video3.png" alt="" />
+                                </div>
+                                <div class="video__text">
+                                    На 25% лучшая обработка PDF документов по сравнению с
+                                    предыдущими моделями
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide video__slide--4">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video4.png" alt="" />
+                                </div>
+                                <div class="video__text">
+                                    Новый, простой, интуитивно понятный интерфейс
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide video__slide--1">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video5.png" alt="" />
+                                </div>
+                                <div class="video__text">Обзор всей линейки</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video.png" alt="" />
+                                </div>
+                                <div class="video__text">Качество печати</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide video__slide--3">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video2.png" alt="" />
+                                </div>
+                                <div class="video__text">Производительность</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide video__slide--4">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video6.png" alt="" />
+                                </div>
+                                <div class="video__text">Устойчивость окружающей среды</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide video__slide--1">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video7.png" alt="" />
+                                </div>
+                                <div class="video__text">Удобство использования</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video8.png" alt="" />
+                                </div>
+                                <div class="video__text">Безопасность</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide video__slide--3">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video9.png" alt="" />
+                                </div>
+                                <div class="video__text">Удобство обслуживания</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide video__slide video__slide--4">
+                            <div class="video__item">
+                                <div class="video__trigger">
+                                    <div class="video__play"></div>
+                                    <img src="./assets/img/video10.png" alt="" />
+                                </div>
+                                <div class="video__text">Лицензирование</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container desktop">
+                    <div class="video__bottom">
+                        <div class="subtitle video__subtitle">
+                            Узнайте, почему эти МФУ предлагают гораздо больше возможностей, когда
+                            речь заходит о пользовательском интерфейсе, безопасности данных и
+                            искусственном интеллекте.
+                        </div>
+                        <div class="video__btns">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="innovation">
             <img src="./assets/img/dots10.svg" alt="" class="dots" />
             <div class="container">
                 <div class="innovation__inner">
                     <div class="innovation__info">
-                        <div class="subtitle innovation__subtitle">Инновации в лучшем виде</div>
+                        <div class="subtitle innovation__subtitle">
+                            Инновации в лучшем виде
+                            <div
+                                class="line animate__lightSpeedInLeft animate__animated animation"
+                            ></div>
+                        </div>
                         <div class="innovation__text">
                             Новые TASKalfa 4054ci/7054ci помогают вам работать эффективнее
                         </div>
@@ -467,25 +914,45 @@
                         </ul>
                     </div>
 
-                    <img src="./assets/img/innovation.png" alt="" />
+                    <img
+                        src="./assets/img/innovation.png"
+                        alt=""
+                        class="animate__bounceIn animate__animated animation delay-2"
+                    />
                 </div>
                 <a href="#" class="innovation__btn">Скачать брошуру</a>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="form">
             <div class="container">
                 <div class="contact__inner">
                     <div class="contact__box">
-                        <div class="title contact__title">Хотите узнать больше?</div>
+                        <div class="title contact__title">Хотите узнать бльше?</div>
                         <div class="contact__text">
                             Заполните форму обратной связи и наши специалисты из офиса в Москве
                             смогут пригласить Вас с свой шоу-рум, или устроить онлайн-демонстрацию
                             из Европейского офиса.
                         </div>
-                        <img src="./assets/img/corner.svg" alt="" class="corner">
-                        <img src="./assets/img/corner.svg" alt="" class="corner corner--sec">
-                        <img src="./assets/img/corner.svg" alt="" class="corner corner--third">
-                        <img src="./assets/img/corner.svg" alt="" class="corner corner--four">
+                        <img
+                            src="./assets/img/corner.svg"
+                            alt=""
+                            class="corner animate__zoomIn animate__animated animation"
+                        />
+                        <img
+                            src="./assets/img/corner.svg"
+                            alt=""
+                            class="corner corner--sec animate__zoomIn animate__animated animation"
+                        />
+                        <img
+                            src="./assets/img/corner.svg"
+                            alt=""
+                            class="corner corner--third animate__zoomIn animate__animated animation"
+                        />
+                        <img
+                            src="./assets/img/corner.svg"
+                            alt=""
+                            class="corner corner--four animate__zoomIn animate__animated animation"
+                        />
                     </div>
                     <form action="" class="form">
                         <div class="form__inputs">
@@ -496,7 +963,9 @@
                             <input type="text" name="num" placeholder="Телефон" />
                             <input type="text" name="mail" placeholder="Email" />
                         </div>
-                        <button class="form__btn">Отправить</button>
+                        <button class="form__btn" type="submit" onclick="submit()">
+                            Отправить
+                        </button>
                         <div class="form__terms">
                             <input type="checkbox" id="term" class="form__checkbox" />
                             <label for="term" class="form__label"></label>
@@ -514,10 +983,10 @@
             <div class="container">
                 <div class="footer__inner">
                     <nav class="footer__nav">
-                        <a href="" class="footer__link">Преимущества</a>
-                        <a href="" class="footer__link">Описание линейки</a>
-                        <a href="" class="footer__link">Видео</a>
-                        <a href="" class="footer__link">Форма обратной связи</a>
+                        <a href="#property" class="footer__link">Преимущества</a>
+                        <a href="#model" class="footer__link">Описание линейки</a>
+                        <a href="#video" class="footer__link">Видео</a>
+                        <a href="#form" class="footer__link">Форма обратной связи</a>
                     </nav>
                     <div class="footer__social">
                         <a href="">
@@ -527,7 +996,9 @@
                             <img src="./assets/img/yt.png" alt="" />
                         </a>
                     </div>
-                    <div class="footer__copyright">2021 KYOCERA Document Solutions Russia L.L.C</div>
+                    <div class="footer__copyright">
+                        2021 KYOCERA Document Solutions Russia L.L.C
+                    </div>
                 </div>
                 <div class="footer__terms">
                     <a href="">Конфиденциальность и файлы cookie</a>
@@ -535,6 +1006,10 @@
                 </div>
             </div>
         </footer>
+        <div class="player">
+            <div class="popup__close"></div>
+            <video src="./assets/video/demo.mp4" muted controls class="player__video"></video>
+        </div>
         <div class="overlay"></div>
         <div class="popup">
             <div class="popup__close"></div>
@@ -589,7 +1064,7 @@
                     условиях окружающей среды.
                 </div>
             </div>
-			<div class="popup__item">
+            <div class="popup__item">
                 <div class="popup__trigger">
                     <div class="popup__item-name">ФУНКЦИИ КОПИРОВАНИЯ</div>
                     <div class="popup__btn"></div>
@@ -600,7 +1075,7 @@
                     условиях окружающей среды.
                 </div>
             </div>
-			<div class="popup__item">
+            <div class="popup__item">
                 <div class="popup__trigger">
                     <div class="popup__item-name">ФУНКЦИИ ФАКСИМИЛЬНОЙ СВЯЗИ (ДОПОЛНИТЕЛЬНО)</div>
                     <div class="popup__btn"></div>
@@ -611,7 +1086,7 @@
                     условиях окружающей среды.
                 </div>
             </div>
-			<div class="popup__item">
+            <div class="popup__item">
                 <div class="popup__trigger">
                     <div class="popup__item-name">РАСХОДНЫЕ МАТЕРИАЛЫ</div>
                     <div class="popup__btn"></div>
@@ -625,7 +1100,8 @@
         </div>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./js/app.js"></script>
 </html>
