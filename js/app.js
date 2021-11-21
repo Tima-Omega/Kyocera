@@ -1,9 +1,11 @@
 $(document).ready(function () {
-    const swiper = new Swiper('.video__slider', {
+    /* const swiper = new Swiper('.video__slider', {
         slidesPerView: 'auto',
         centeredSlides: true,
         spaceBetween: 100,
+        
         simulateTouch: false,
+        autoHeight: true,
         initialSlide: 1,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -13,13 +15,70 @@ $(document).ready(function () {
             el: '.swiper-pagination',
             type: 'fraction',
         },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                autoHeight: false,
+            },
+            1200: {
+                slidesPerView: 'auto',     
+            }
+        }
+    }); */
+
+    const swiperVideo = new Swiper('.video-slider', {
+        slidesPerView: 'auto',
+        spaceBetween: 100,
+        navigation: {
+            nextEl: '.video-next',
+            prevEl: '.video-prev',
+        },
+        pagination: {
+            el: '.video-pagination',
+            type: 'fraction',
+        },
+        
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                centeredSlides: false,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                initialSlide: 0,
+            },
+            1200: {
+                spaceBetween: 100,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                initialSlide: 1,  
+            }
+        }
     });
 
     const swiper3 = new Swiper('.model__bottom', {
         freeMode: true,
         watchSlidesProgress: true,
         slidesPerView: 'auto',
-        spaceBetween: 68,
+        spaceBetween: 30,
+        breakpoints: {
+            576: {
+                spaceBetween: 68
+            }
+        }
     });
     const swiper2 = new Swiper('.model__slider', {
         simulateTouch: false,
@@ -27,7 +86,7 @@ $(document).ready(function () {
             swiper: swiper3,
         },
     });
-    $('.video__slide').click(function () {
+    $('.video-slider').click(function () {
         $('.overlay').fadeIn();
         $('.player').fadeIn();
         $('body').css('overflow', 'hidden');
