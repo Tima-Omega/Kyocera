@@ -2767,6 +2767,11 @@ body {
     }
 }
 
+.video-next, .video-prev {
+    cursor: pointer;
+    user-select: none;
+}
+
 .video-next {
     .video-slider-panel__icon {
         transform: rotate(180deg);
