@@ -153,6 +153,7 @@ $(document).ready(function () {
 
     wow = new WOW({
         boxClass: 'animation',
+        offset: 300
     });
 
     wow.init();

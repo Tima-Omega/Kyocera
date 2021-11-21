@@ -2332,6 +2332,9 @@ body {
 .video-slider {
     margin-top: 60px;
     margin-bottom: 68px;
+    .swiper-wrapper {
+        transition-duration: 300ms !important;
+    }
     .swiper-slide {
         width: auto !important;
         @media (max-width: 768px) {
@@ -2741,6 +2744,7 @@ body {
     align-items: center;
     &__icon {
         display: block;
+        user-select: none;
         @media (max-width: 576px) {
             width: 45px;
         }
