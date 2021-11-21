@@ -984,7 +984,7 @@ body {
     &__arrow {
         position: absolute;
         top: 71%;
-        // z-index: -1;
+        z-index: 2;
         left: 46%;
         @media (max-width: 1200px) {
             left: 31%;
@@ -1075,6 +1075,8 @@ body {
             img {
                 margin-top: 60px;
                 max-width: 100%;
+                position: relative;
+                z-index: 1;
                 @media (max-width: 992px) {
                     margin-top: 0;
                     margin-left: 20px;
@@ -1727,6 +1729,14 @@ body {
             margin-bottom: 30px;
         }
     }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
     input {
         max-width: 327px;
         width: 100%;
@@ -1744,6 +1754,7 @@ body {
         &::placeholder {
             color: #c6c6c6;
         }
+
         @media (max-width: 992px) {
             max-width: 100%;
         }
@@ -1800,7 +1811,7 @@ body {
     }
     &__checkbox.error + label {
         border: 1px solid red;
-    } 
+    }
     &__label {
         background: #fff;
         cursor: pointer;
@@ -2340,6 +2351,7 @@ body {
     }
     .swiper-slide {
         width: auto !important;
+        // margin-left: -175px;
         @media (max-width: 768px) {
             width: 100% !important;
         }
@@ -2351,8 +2363,10 @@ body {
         }
         &.swiper-slide-active {
             margin-top: 50px;
+            // margin: 50px 175px 0 -100px !important;
             .video-item {
                 max-width: 615px;
+                transform: scale(1) !important;
                 @media (max-width: 992px) {
                     max-width: 100%;
                 }
@@ -2372,7 +2386,8 @@ body {
 }
 .video-item {
     width: 100%;
-    max-width: 307px;
+    // max-width: 307px;
+    // transition: 0.3s linear;
     @media (max-width: 992px) {
         max-width: 100%;
     }
@@ -2774,7 +2789,8 @@ body {
     }
 }
 
-.video-next, .video-prev {
+.video-next,
+.video-prev {
     cursor: pointer;
     user-select: none;
 }

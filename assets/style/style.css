@@ -1586,6 +1586,7 @@ body {
 .conception__arrow {
   position: absolute;
   top: 71%;
+  z-index: 2;
   left: 46%;
 }
 
@@ -1740,6 +1741,8 @@ body {
 .conception__item--third img {
   margin-top: 60px;
   max-width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 992px) {
@@ -2780,6 +2783,16 @@ body {
   }
 }
 
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 .form input {
   max-width: 327px;
   width: 100%;
@@ -3673,6 +3686,8 @@ body {
 
 .video-slider .swiper-slide.swiper-slide-active .video-item {
   max-width: 615px;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
 }
 
 @media (max-width: 992px) {
@@ -3702,7 +3717,6 @@ body {
 
 .video-item {
   width: 100%;
-  max-width: 307px;
 }
 
 @media (max-width: 992px) {
@@ -4318,7 +4332,8 @@ body {
   }
 }
 
-.video-next, .video-prev {
+.video-next,
+.video-prev {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
