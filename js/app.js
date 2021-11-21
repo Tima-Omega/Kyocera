@@ -90,11 +90,14 @@ $(document).ready(function () {
         $('.overlay').fadeIn();
         $('.player').fadeIn();
         $('body').css('overflow', 'hidden');
+        $('body').css('padding-right', '20px');
+
     });
     $('.model__btn').click(function () {
         $('.overlay').fadeIn();
         $('.popup').fadeIn();
         $('body').css('overflow', 'hidden');
+        $('body').css('padding-right', '20px');
     });
     $('.overlay').click(function () {
         $(this).fadeOut();
@@ -102,6 +105,8 @@ $(document).ready(function () {
         $('.player').fadeOut();
         $('.player__video').get(0).pause();
         $('body').css('overflow', 'auto');
+        $('body').css('padding-right', '0px');
+
     });
     $('.popup__close').click(function () {
         $('.overlay').fadeOut();
@@ -109,6 +114,8 @@ $(document).ready(function () {
         $('.player').fadeOut();
         $('.player__video').get(0).pause();
         $('body').css('overflow', 'auto');
+        $('body').css('padding-right', '0px');
+
     });
     $('.popup__trigger').click(function () {
         $(this).next('.popup__info').slideToggle();
@@ -118,38 +125,63 @@ $(document).ready(function () {
         focusCleanup: true,
         rules: {
             mail: {
+                required: true,
                 email: true,
             },
             surname: {
+                required: true,
+
                 minlength: 4,
                 lettersonly: true,
             },
             name: {
+                required: true,
+
                 minlength: 2,
                 lettersonly: true,
             },
             comp: {
+                required: true,
+
                 minlength: 4,
             },
             post: {
+                required: true,
                 minlength: 4,
                 lettersonly: true,
             },
             num: {
+                required: true,
                 digits: true,
             },
+            check: {
+                required: true,
+            }
         },
         errorPlacement: function (error, element) {
             return true;
         },
+        highlight: function(element) {
+            $(element).addClass("error");
+        },
+        unhighlight: function(element) {
+            $(element).removeClass("error");
+        }
     });
     jQuery.validator.addMethod('lettersonly', function (value, element) {
-        return this.optional(element) || /^[a-z]+$/i.test(value);
+        return this.optional(element) || /^[а-я]+$/i.test(value);
     });
 
     $('.burger').click(function () {
         $('.burger__list').toggleClass('active');
     });
+
+    $(".form__term").click(function() {
+        const checkBoxes = $(".form__checkbox");
+        checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+    });
+
+    
 
     wow = new WOW({
         boxClass: 'animation',

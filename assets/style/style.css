@@ -36,6 +36,7 @@ html {
 
 body {
   font-family: 'GT Eesti Pro Display', sans-serif;
+  overflow: auto;
 }
 
 .delay-1 {
@@ -2890,6 +2891,10 @@ body {
 
 .form__checkbox:checked + .form__label::after {
   opacity: 1;
+}
+
+.form__checkbox.error + label {
+  border: 1px solid red;
 }
 
 .form__label {
