@@ -72,6 +72,7 @@ $(document).ready(function () {
             0: {
                 slidesPerView: 1,
                 centeredSlides: false,
+                spaceBetween: 30,
             },
             768: {
                 slidesPerView: 2,
@@ -225,7 +226,7 @@ $(document).ready(function () {
     // });
 
     $.validator.addMethod('lettersonly', function (value, element) {
-        return this.optional(element) || /^[a-z]+$/i.test(value);
+        return this.optional(element) || /^[a-z, а-я]+$/i.test(value);
     });
     $.extend($.validator.messages, {
         lettersonly: "Пожалуйста, вводите только буквы."
