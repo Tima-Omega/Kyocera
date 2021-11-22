@@ -2809,6 +2809,12 @@ body {
   border: 1px solid red;
 }
 
+.form input.error + label.error {
+  font-weight: 400;
+  font-size: 12px;
+  color: red;
+}
+
 .form input::-webkit-input-placeholder {
   color: #c6c6c6;
 }
@@ -2902,12 +2908,16 @@ body {
   width: 0 !important;
 }
 
-.form__checkbox:checked + .form__label::after {
+.form__checkbox:checked ~ .form__label::after {
   opacity: 1;
 }
 
-.form__checkbox.error + label {
-  border: 1px solid red;
+.form__checkbox.error ~ .error {
+  display: none !important;
+}
+
+.form__checkbox.error ~ .form__label {
+  border: 1px solid red !important;
 }
 
 .form__label {

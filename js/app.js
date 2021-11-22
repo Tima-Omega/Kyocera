@@ -180,48 +180,127 @@ $(document).ready(function () {
         $(this).next('.popup__info').slideToggle();
         $(this).find('.popup__btn').toggleClass('active');
     });
+    // $('.form').validate({
+    //     focusCleanup: true,
+    //     rules: {
+    //         mail: {
+    //             required: true,
+    //             email: true,
+    //         },
+    //         surname: {
+    //             required: true,
+    //             lettersonly: true,
+    //         },
+    //         name: {
+    //             required: true,
+    //             lettersonly: true,
+    //         },
+    //         comp: {
+    //             required: true,
+    //         },
+    //         post: {
+    //             required: true,
+    //             lettersonly: true,
+    //         },
+    //         num: {
+    //             required: true,
+    //             digits: true,
+    //         },
+    //         check: {
+    //             required: true,
+    //         }
+    //     },
+    //     errorPlacement: function (error, element) {
+    //         return true;
+    //     },
+    //     highlight: function(element) {
+    //         $(element).addClass("error");
+    //     },
+    //     unhighlight: function(element) {
+    //         $(element).removeClass("error");
+    //     }
+    // });
+    // jQuery.validator.addMethod('lettersonly', function (value, element) {
+    //     return this.optional(element) || /^[а-я, a-z]+$/i.test(value);
+    // });
+
+    $.validator.addMethod('lettersonly', function (value, element) {
+        return this.optional(element) || /^[a-z]+$/i.test(value);
+    });
+    $.extend($.validator.messages, {
+        lettersonly: "Пожалуйста, вводите только буквы."
+    });
     $('.form').validate({
-        focusCleanup: true,
+        lang: 'ru',
+        ignore: "input[type='text']:hidden",
         rules: {
-            mail: {
-                required: true,
-                email: true,
-            },
-            surname: {
-                required: true,
+            firstname: {
                 lettersonly: true,
-            },
-            name: {
                 required: true,
+                minlength: 2,
+            },
+            lastname: {
                 lettersonly: true,
-            },
-            comp: {
                 required: true,
+                minlength: 2,
+            },
+            company: {
+                required: true,
+                minlength: 2,
             },
             post: {
                 required: true,
-                lettersonly: true,
+                minlength: 2,
             },
-            num: {
+            phone: {
                 required: true,
                 digits: true,
             },
-            check: {
+            email: {
                 required: true,
-            }
-        },
-        errorPlacement: function (error, element) {
-            return true;
+                email: true,
+            },
+            data_processing: {
+                required: true,
+            },
         },
         highlight: function(element) {
-            $(element).addClass("error");
-        },
-        unhighlight: function(element) {
-            $(element).removeClass("error");
-        }
-    });
-    jQuery.validator.addMethod('lettersonly', function (value, element) {
-        return this.optional(element) || /^[а-я, a-z]+$/i.test(value);
+                    $(element).addClass("error");
+                },
+                unhighlight: function(element) {
+                    $(element).removeClass("error");
+                },
+        submitHandler: function(form, event) {
+            event.preventDefault()
+
+            const formData = $(form).serializeArray()
+            const formUrl = $(form).attr('action')
+            const formMethod = $(form).attr('method')
+
+            let data = {}
+
+            formData.forEach(function (item) {
+                data[item.name] = item.value
+            });
+
+            $.ajax({
+                url: formUrl,
+                type: formMethod,
+                dataType: 'JSON',
+                data: data,
+                success: function (response) {
+                    let result = $.parseJSON(response)
+                    console.log(result)
+                    clear()
+                },
+                error: function () {
+                    console.log('Ошибка. Данные не отправлены.')
+                    console.log(data)
+                },
+            })
+
+            return false
+         }
     });
 
     $('.burger').click(function () {
@@ -242,27 +321,27 @@ $(document).ready(function () {
 
     wow.init();
 
-    function submit(e) {
-        e.preventDefault();
-        let formData = $(this).serializeArray(),
-            formUrl = $(this).attr('action'),
-            formMethod = $(this).attr('method');
-        formData.forEach(function (item) {
-            data.result[item.name] = item.value;
-        });
-        $.ajax({
-            url: formUrl,
-            type: formMethod,
-            dataType: 'JSON',
-            data: data.result,
-            success: function (response) {
-                let result = $.parseJSON(response);
-                console.log(result);
-                clear();
-            },
-            error: function () {
-                console.log('Ошибка. Данные не отправлены.');
-            },
-        });
-    }
+    // function submit(e) {
+    //     e.preventDefault();
+    //     let formData = $(this).serializeArray(),
+    //         formUrl = $(this).attr('action'),
+    //         formMethod = $(this).attr('method');
+    //     formData.forEach(function (item) {
+    //         data.result[item.name] = item.value;
+    //     });
+    //     $.ajax({
+    //         url: formUrl,
+    //         type: formMethod,
+    //         dataType: 'JSON',
+    //         data: data.result,
+    //         success: function (response) {
+    //             let result = $.parseJSON(response);
+    //             console.log(result);
+    //             clear();
+    //         },
+    //         error: function () {
+    //             console.log('Ошибка. Данные не отправлены.');
+    //         },
+    //     });
+    // }
 });

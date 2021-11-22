@@ -1750,6 +1750,11 @@ body {
         font-family: GT Eesti Pro Text;
         &.error {
             border: 1px solid red;
+            & + label.error {
+                font-weight: 400;
+                font-size: 12px;
+                color: red;
+            }
         }
         &::placeholder {
             color: #c6c6c6;
@@ -1805,12 +1810,15 @@ body {
         visibility: hidden;
         width: 0 !important;
 
-        &:checked + .form__label::after {
+        &:checked ~ .form__label::after {
             opacity: 1;
         }
+        &.error ~ .error {
+            display: none !important;
+        }
     }
-    &__checkbox.error + label {
-        border: 1px solid red;
+    &__checkbox.error ~ .form__label {
+        border: 1px solid red !important;
     }
     &__label {
         background: #fff;

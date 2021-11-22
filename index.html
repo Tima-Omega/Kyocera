@@ -1045,7 +1045,41 @@
                             class="corner corner--four animate__zoomIn animate__animated animation"
                         />
                     </div>
-                    <form action="" class="form">
+                    <form method="GET" action="URL" class="form">
+                        <div class="form__inputs">
+                            <div>
+                                <input type="text" name="firstname" placeholder="Имя" />
+                            </div>
+                            <div>
+                                <input type="text" name="lastname" placeholder="Фамилия" />
+                            </div>
+                            <div>
+                                <input type="text" name="company" placeholder="Компания" />
+                            </div>
+                            <div>
+                                <input type="text" name="post" placeholder="Должность" />
+                            </div>
+                            <div>
+                                <input type="text" name="phone" placeholder="Телефон" />
+                            </div>
+                            <div>
+                                <input type="text" name="email" placeholder="Email" />
+                            </div>
+                        </div>
+                        <button class="form__btn" type="submit">
+                            Отправить
+                        </button>
+                        <div class="form__terms">
+                            <input type="checkbox" name="data_processing" id="term" class="form__checkbox" />
+                            <label for="term" class="form__label"></label>
+                            <div class="form__term">
+                                Заполняя и отправляя эту анкету, Вы даёте согласие на обработку
+                                Ваших персональных данных в соответствии с Федеральным законом РФ от
+                                27 июля 2006 г. № 152-ФЗ «О персональных данных».
+                            </div>
+                        </div>
+                    </form>
+                    <!-- <form action="" class="form">
                         <div class="form__inputs">
                             <input type="text" name="name" placeholder="Имя" />
                             <input type="text" name="surname" placeholder="Фамилия" />
@@ -1066,7 +1100,7 @@
                                 27 июля 2006 г. № 152-ФЗ «О персональных данных».
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
